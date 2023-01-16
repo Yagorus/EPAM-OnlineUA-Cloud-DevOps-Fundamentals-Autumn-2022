@@ -19,6 +19,7 @@ Begin by updating the package lists on your machine:
 `sudo service mysql status`
 
 ![status_db.png](../img/status_db.png)
+
 2. Select a subject area and describe the database schema, (minimum 3 tables) 
 
 ![db_schema.png](../img/db_schema.png)
@@ -99,6 +100,7 @@ Check result with command `select * from [table name]`
 ![order_by_check.png](../img/order_by_check.png)
 
 added more data:
+
 ![more_data.png](../img/more_data.png)
 
 
@@ -121,15 +123,17 @@ delete element from table with `product_id=3`
 ![delete_check.png](../img/delete_check.png)
 
 create new user and grant him privileges 
+
 ![create_user.png](../img/create_user.png)
 
 
 11. Make a selection from the main table DB MySQL
+
 ![db_mysql.png](../img/db_mysql.png)
 
 
 ## PART 2
-10.Make backup of your database. 
+12. Make backup of your database. 
 
 ![backup_localdb.png](../img/backup_localdb.png)
 
@@ -248,18 +252,18 @@ UNLOCK TABLES;
 
 
 
-11.Delete the table and/or part of the data in the table. 
+13. Delete the table and/or part of the data in the table. 
 
 Delete `goods` table from `store` database:
 
 ![delete_table.png](../img/delete_table.png)
 
-12.Restore your database. 
+14. Restore your database. 
 
 Restoring `goods` table and show content in it
 
 ![restore_db.png](../img/restore_db.png)
-13.Transfer your local database to RDS AWS. 
+15. Transfer your local database to RDS AWS. 
 
 First - need go to AWS web page, choose RDS section and create database. 
 
@@ -271,17 +275,17 @@ Go to database, create there db with name `store` and use dump file:
 
 ![transfer_localdb_to_rds.png](../img/transfer_localdb_to_rds.png)
 
-14.Connect to your database. 
+16. Connect to your database. 
 
 Now we can connect to db
 
 ![connection_to_db_rds.png](../img/connection_to_db_rds.png)
 
 
-15.Execute SELECT operator similar step 6. 
+17. Execute SELECT operator similar step 6. 
 
 ![select_for_all_tables.png](../img/select_for_all_tables.png)
 
-16.Create the dump of your database.
+18. Create the dump of your database.
 
 ![backup_for_rds.png](../img/backup_for_rds.png)
