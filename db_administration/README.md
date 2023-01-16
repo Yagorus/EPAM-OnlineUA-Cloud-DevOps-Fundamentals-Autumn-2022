@@ -59,15 +59,15 @@ CREATE TABLE orders (
 
 Check result with `show tables`
 
-![[Pasted image 20230112163524.png]]
+![show_tables.png](../img/show_tables.png)
 
 And get description about tables ` desc [table name]`
 
-![[Pasted image 20230112163613.png]]
+![desc_customers.png](../img/desc_customers.png)
 
-![[Pasted image 20230112163628.png]]
+![desc_orders.png](../img/desc_orders.png)
 
-![[Pasted image 20230112163636.png]]
+![desc_products.png](../img/desc_products.png)
 
 6. Fill in tables. 
    Next commands will fill in tables 
@@ -90,45 +90,45 @@ INSERT INTO orders (customer_id, order_date) VALUES
 
 Check result with command `select * from [table name]`
 
-![[Pasted image 20230112164653.png]]
-![[Pasted image 20230112164659.png]]
-![[Pasted image 20230112164708.png]]
+![select_customers.png](../img/select_customers.png)
+![select_orders.png](../img/select_orders.png)
+![select_products.png](../img/select_products.png)
 7. Construct and execute SELECT operator with WHERE, GROUP BY and ORDER BY. 
-![[Pasted image 20230112165555.png]]
+![where_use.png](../img/where_use.png)
 
-![[Pasted image 20230112170232.png]]
+![order_by_check.png](../img/order_by_check.png)
 
 added more data:
-![[Pasted image 20230116173809.png]]
+![more_data.png](../img/more_data.png)
 
 
 using `group by`
 
-![[Pasted image 20230116174738.png]]
+![group_by_check.png](../img/group_by_check.png)
 
 using `order by`
 
-![[Pasted image 20230116174814.png]]
+![order_by_check2.png](../img/order_by_check2.png)
 
 9. Execute other different SQL queries DDL, DML, DCL. 
 Rename table from `products` to `goods`
-![[Pasted image 20230116183905.png]]
+![rename_check.png](../img/rename_check.png)
 
 delete element from table with `product_id=3` 
-![[Pasted image 20230116184209.png]]
+![delete_check.png](../img/delete_check.png)
 
 create new user and grant him privileges 
-![[Pasted image 20230116184956.png]]
+![create_user.png](../img/create_user.png)
 
 
 11. Make a selection from the main table DB MySQL
-![[Pasted image 20230116190024.png]]
+![db_mysql.png](../img/db_mysql.png)
 
 
 ## PART 2
 10.Make backup of your database. 
 
-![[Pasted image 20230116190644.png]]
+![backup_localdb.png](../img/backup_localdb.png)
 
 dump_file.sql
 ``` mysql
@@ -247,30 +247,30 @@ UNLOCK TABLES;
 
 11.Delete the table and/or part of the data in the table. 
 Delete `goods` table from `store` database:
-![[Pasted image 20230116190918.png]]
+![delete_table.png](../img/delete_table.png)
 
 12.Restore your database. 
 Restoring `goods` table and show content in it
-![[Pasted image 20230116191149.png]]
+![restore_db.png](../img/restore_db.png)
 13.Transfer your local database to RDS AWS. 
 
 First - need go to AWS web page, choose RDS section and create database. 
 
-![[Pasted image 20230116192115.png]]
+![create_db_aws.png](../img/create_db_aws.png)
 
 Go to database, create there db with name `store` and use dump file:
-![[Pasted image 20230116202410.png]]
+![connect_to_rds.png](../img/connect_to_rds.png)
 
-![[Pasted image 20230116202451.png]]
+![transfer_localdb_to_rds.png](../img/transfer_localdb_to_rds.png)
 14.Connect to your database. 
 
 Now we can connect to db
-![[Pasted image 20230116201947.png]]
+![connection_to_db_rds.png](../img/connection_to_db_rds.png)
 
 
 15.Execute SELECT operator similar step 6. 
 
-![[Pasted image 20230116202527.png]]
+![select_for_all_tables.png](../img/select_for_all_tables.png)
 16.Create the dump of your database.
 
-![[Pasted image 20230116202705.png]]
+![backup_for_rds.png](../img/backup_for_rds.png)

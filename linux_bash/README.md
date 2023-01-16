@@ -3,12 +3,12 @@ A. Create a script that uses the following keys:
 2. The --all key displays the IP addresses and symbolic names of all hosts in the current subnet 
 3. The --target key displays a list of open system TCP ports. The code that performs the functionality of each of the subtasks must be placed in a separate function 
 
-![[task1_code.png]]
-![[task1_output.png]]
+![task1_code.png](../img/task1_code.png)
+![task1_output.png](../img/task1_output.png)
 
-![[task1_all.png]]
+![task1_all.png](../img/task1_all.png)
 
-![[task1_target.png]]
+![task1_target.png](../img/task1_target.png)
 
 B. Using Apache log example create a script to answer the following questions: 
 1. From which ip were the most requests? 
@@ -17,14 +17,14 @@ B. Using Apache log example create a script to answer the following questions:
 4. What non-existent pages were clients referred to? 
 5. What time did site get the most requests? 
 6. What search bots have accessed the site? (UA + IP) 
-![[Pasted image 20230110171753.png]]
+![code_for_task_b.png](../img/code_for_task_b.png)
 
-![[Pasted image 20230110170254.png]]
+![use_case_task2.png](../img/use_case_task2.png)
 
-![[Pasted image 20230110170337.png]]
-![[Pasted image 20230110170410.png]]
+![use_case_task2_params.png](../img/use_case_task2_params.png)
+![use_case_task2_params2.png](../img/use_case_task2_params2.png)
 
-![[Pasted image 20230110171122.png]]
+![use_case_task2_params3.png](../img/use_case_task2_params3.png)
 
 1. From which ip were the most requests? 
 ```
@@ -90,15 +90,15 @@ Request per day
 
 C. Create a data backup script that takes the following data as parameters: 
 
-![[Pasted image 20230110172115.png]]
+![code_for_task3.png](../img/code_for_task3.png)
 1. Path to the syncing directory. 
 2. The path to the directory where the copies of the files will be stored. In case of adding new or deleting old files, the script must add a corresponding entry to the log file indicating the time, type of operation and file name. [The command to run the script must be added to crontab with a run frequency of one minute]
 
-![[Pasted image 20230110171841.png]]
+![ll_command.png](../img/ll_command.png)
 
-![[Pasted image 20230110171912.png]]
+![ll_command2.png](../img/ll_command2.png)
 
-![[Pasted image 20230110172012.png]]
+![use_case_task3.png](../img/use_case_task3.png)
 
-![[Pasted image 20230110172049.png]]
+![result_task3.png](../img/result_task3.png)
 
