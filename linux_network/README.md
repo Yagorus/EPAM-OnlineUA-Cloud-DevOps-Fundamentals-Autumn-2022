@@ -4,7 +4,7 @@
 2. ubuntu_client2 - Internal network
 3. ubuntu_srv1 - NAT
 
-![[topology.png]]
+![topology.png](../img/topology.png)
 
 
 IP for all network
@@ -45,7 +45,7 @@ For server_1 we need configure two static ips for net2 and net3. It will be int2
 
 Before launch server_1, in VM Box i apply three adapters NAT and two Internal network.
 
-![[ubuntu_srv1.png]]
+![ubuntu_srv1.png](../img/ubuntu_srv1.png)
 
 So i am using ubuntu 22.04 LTS fore all hosts, and way to set up network it's netplan, that can be found in ```/etc/netplan/*.yml``` path.
 
@@ -67,7 +67,7 @@ sudo netplan apply
 ```
 Result ```ip a```
 
-![[setting_serv1.png]]
+![setting_serv1.png](../img/setting_serv1.png)
 
 ## Set up dhcp server for server_1 to provide ips for clients.
 
@@ -118,14 +118,14 @@ Run command ```sudo service isc-dhcp-server start``` to run DHCP server.
 
 Check status DHCP server run ``` sudo systemctl status isc-dhcp-server ```. If everything fine with config you will get next message
 
-![[DHCP_status.png]]
+![DHCP_status.png](../img/DHCP_status.png)
 
 ## Asign ip addreses for clients
 
 To asign ip address for client in VMbox, need setup network
 
 For client 1 it will be net2
-![[dlient1_setup.png]]
+![dlient1_setup.png](../img/dlient1_setup.png)
 
 For client 2 it will be net3
 ![[dlient2_setup.png]]
@@ -144,16 +144,16 @@ network:
 Apply changes and run ```sudo netplan apply``` then reboot or restart net service.
 
 Result for clinet 1
-![[client1_ip_a.png]]
+![client1_ip_a.png](../img/client1_ip_a.png)
 
 Use same setting for clinet 2 (IP enp0s8 interface willl be 172.16.9.2/24)
 
 Result for client 2:
-![[client2_ip_a.png]]
+![client2_ip_a.png](../img/client2_ip_a.png)
 
 Ping test for client1:
-![[client1_ping_test_server.png]]
+![client1_ping_test_server.png](../img/client1_ping_test_server.png)
 
 Ping test for client2:
-![[client2_ping_test_server.png]]
+![client2_ping_test_server.png](../img/client2_ping_test_server.png)
 
