@@ -18,10 +18,10 @@ Begin by updating the package lists on your machine:
 
 `sudo service mysql status`
 
-![[Pasted image 20230111173742.png]]
+![status_db.png](../img/status_db.png)
 2. Select a subject area and describe the database schema, (minimum 3 tables) 
 
-![[Pasted image 20230111173025.png]]
+![db_schema.png](../img/db_schema.png)
 
 This schema includes a `products` table with columns for the product ID (which is the primary key and auto-increments), the name, price, and stock of each product. It also include `customers` table with columns for the customer ID (which is the primary key and auto-increments), the name, email, and phone number. and lastly it has an `orders` table with columns for the order ID (which is the primary key and auto-increments), the customer ID (which is a foreign key referencing the `customer_id` column in the `customers` table), and the order date. Note this is just a simple example, based on your requirement you may need to add/modify tables and columns accordingly.
 
